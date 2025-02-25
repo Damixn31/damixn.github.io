@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "snowscan.io"
+title                    : "damixn.io"
 title_separator          : "-"
-name                     : "Snowscan"
+name                     : "Damixn"
 description              : "Posts about security, CTFs and networking"
 url                      : "https://damixn.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -101,10 +101,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Snowscan"
+  name             : "Hyrocript"
   avatar           : "/assets/images/avatar.png"
   bio              : "Pentester, CTF player<br>HackTheBox ATeam"
-  location         : "Canada"
+  location         : "Argentina"
   email            : "info@snowscan.io"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -114,7 +114,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "slemire"
+  github           : "Dxmian31"
   gitlab           :
   google_plus      :
   keybase          : "snowscan"
