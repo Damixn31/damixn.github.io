@@ -4,12 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi página en GitHub Pages</title>
+  <title>Mi Blog de Ciberseguridad</title>
   <!-- Importar Tailwind CSS desde CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Puedes agregar estilos adicionales aquí si lo deseas */
-  </style>
 </head>
 
 <body class="bg-gray-100 text-gray-900">
@@ -17,11 +14,11 @@
   <!-- Navbar -->
   <header class="bg-blue-600 text-white p-4">
     <nav class="container mx-auto flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold">Mi Página</a>
+      <a href="#" class="text-2xl font-bold">Mi Blog</a>
       <ul class="flex space-x-6">
         <li><a href="#" class="hover:text-gray-300">Inicio</a></li>
-        <li><a href="#about" class="hover:text-gray-300">Acerca de</a></li>
-        <li><a href="#contact" class="hover:text-gray-300">Contacto</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">Acerca de</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -29,38 +26,42 @@
   <!-- Hero Section -->
   <section class="bg-blue-600 text-white text-center py-20">
     <div class="container mx-auto">
-      <h1 class="text-4xl font-extrabold mb-4">Bienvenido a mi página de GitHub Pages</h1>
-      <p class="text-xl">Aquí encontrarás información sobre mis proyectos, habilidades y más.</p>
-      <a href="#about" class="mt-8 inline-block bg-white text-blue-600 py-2 px-6 rounded-full text-lg font-semibold hover:bg-gray-100 transition">Saber más</a>
+      <h1 class="text-4xl font-extrabold mb-4">Bienvenido a mi Blog de Ciberseguridad</h1>
+      <p class="text-xl">Aquí documentaré todo lo que aprendo sobre ciberseguridad, hacking ético y mucho más.</p>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-white">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Acerca de mí</h2>
-      <p class="text-lg mb-4">Soy un desarrollador apasionado por la tecnología y la ciberseguridad. Aquí comparto mis proyectos y conocimientos.</p>
-      <a href="https://github.com" class="text-blue-600 hover:text-blue-800">Visita mi GitHub</a>
-    </div>
-  </section>
+  <!-- Lista de publicaciones -->
+  <section class="container mx-auto py-10">
+    <h2 class="text-3xl font-bold text-center mb-8">Publicaciones Recientes</h2>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-gray-50 py-20">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Contacto</h2>
-      <p class="text-lg mb-4">Si deseas ponerte en contacto conmigo, puedes enviarme un mensaje a través de mis redes sociales o mediante el siguiente formulario:</p>
-      <a href="mailto:tuemail@dominio.com" class="text-blue-600 hover:text-blue-800">Enviar un correo</a>
+    <div class="space-y-8">
+      <!-- Cada publicación -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold">
+          <a href="posts/post1.html" class="text-blue-600 hover:text-blue-800">Cómo resolví la máquina XYZ en Hack The Box</a>
+        </h3>
+        <p class="text-gray-600 mt-4">En esta publicación, comparto cómo resolví la máquina XYZ de Hack The Box. Te mostraré los pasos y herramientas que utilicé...</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold">
+          <a href="posts/post2.html" class="text-blue-600 hover:text-blue-800">Explorando vulnerabilidades en una red local</a>
+        </h3>
+        <p class="text-gray-600 mt-4">En este artículo, hablo sobre cómo escanear redes locales para encontrar vulnerabilidades y posibles vectores de ataque...</p>
+      </div>
+
+      <!-- Puedes agregar más publicaciones de forma similar -->
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-blue-600 text-white py-4">
     <div class="container mx-auto text-center">
-      <p>&copy; 2025 Mi Página. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Mi Blog de Ciberseguridad. Todos los derechos reservados.</p>
     </div>
   </footer>
 
 </body>
 
 </html>
-
