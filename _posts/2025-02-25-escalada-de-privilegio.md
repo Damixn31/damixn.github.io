@@ -89,7 +89,8 @@ La mejor manera de prevenir la escalada de privilegios es asegurarse de que el s
 - [GTFOBins](https://gtfobins.github.io/) es una lista de binarios en sistemas Unix que pueden ser utilizados para ejecutar comandos con privilegios elevados. Permite buscar binarios susceptibles de ser utilizados para escalada de privilegios. 
 
 
-- [PowerUp](https://github.com/PowerShellMafia/PowerSploit) es una herramienta de escalda de privilegios específica para sistemas de Windows.
+- [PowerUp](https://github.com/PowerShellMafia/PowerSploit) es una herramienta de escalada de privilegios específica para sistemas de Windows.
+
 ---
 
 **Referencias**:
