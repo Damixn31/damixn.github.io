@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Escalada de privilegio
+title: Secuestro de la biblioteca de objeto compartidos enlazados dinámicamente
 date: 2025-02-25
 classes: wide
 header:
@@ -38,7 +38,7 @@ Este tipo de secuestro ocurre cuando un atacante logra engañar el programa para
 
 ---
 
-## Secuestro de la biblioteca de objetos compartidos enlazados dinámicamente en entorno contolado
+## Secuestro de la biblioteca de objetos compartidos enlazados dinámicamente en entorno controlado
 
 Script `random.c` en `c` que nos muestra por consola un número aleatorio:
 ```c
@@ -63,7 +63,7 @@ Salida
 1668218290
 ```
 *Cada vez que lo ejecutemos, nos va a dar valores diferentes*
-Si quisíeramos visualizar las librerías que está empleando para que esto esté funcionando correctamente, todo lo que se está empleando por detrás, podriamos ejecutar el comando `ldd` pero no vamos a ver cosas descriptivas, en este caso vamos a estar implementando una herramienta `uftrace` detrazado (tracing) de rendiento y depuración para programas en sistemas Linux.
+Si quisíeramos visualizar las librerías que está empleando para que esto esté funcionando correctamente, todo lo que se está empleando por detrás, podriamos ejecutar el comando `ldd` pero no vamos a ver cosas descriptivas, en este caso vamos a estar implementando una herramienta `uftrace`  de rendimiento y depuración para programas en sistemas Linux.
 
 ```bash
 git clone https://github.com/namhyung/uftrace
@@ -94,7 +94,8 @@ Vamos a tratar de secuestrar la librería `rand()` para que el valor que nos ret
 ```bash
 man 3 rand
 ```
-*Este "3" hace alusión a la sección del manual que queremos consultar que en este caso se refire a las funciones de la biblioteca `c`*
+*Este "3" hace alusión a la sección del manual que queremos consultar que en este caso se refire a las funciones de la biblioteca en c*
+
 **Salida**
 *Lo que tendríamos que configurar sería una estructura como está para secuestrar la librería*
 ```
@@ -124,7 +125,7 @@ LD_PRELOAD=./test ./random
 ```bash
 42
 ```
-*Con esto secuestramos las biblioteca y ente punto, como atacante uno, ya puede imaginar las cosas que se pueden llegar a hacer*. Esto lo vamos hacer en un labortorio práctico que esta en (attack defense)[https://attackdefense.com/] nos tenemos que registrar con `Google` y filtramos por `Librery Chaos` para poder poder practicar cómo escalar privilegios aprovechando el abuso de secuestro de la biblioteca compartida enlazada dinámicamente
+*Con esto secuestramos las biblioteca y ente punto, como atacante uno, ya puede imaginar las cosas que se pueden llegar a hacer*. Esto lo vamos hacer en un labortorio práctico que esta en [attack defense](https://attackdefense.com/) nos tenemos que registrar con `Google` y filtramos por `Librery Chaos` para poder poder practicar cómo escalar privilegios aprovechando el abuso de secuestro de la biblioteca compartida enlazada dinámicamente
 
 todo esto lo vamos hacer en la web, le damos `run` a `Librery Chaos` *esto puede tardar un poco* nos abre una instancia personalizada; hay que tratar de abusar de un binario que se encuentra en `/usr/bin/welcome` si nos fijamos con `ls -l` vemos que `SUID` y el propietario es `root` si lo ejecutamos:
 ```bash
@@ -147,7 +148,7 @@ libwelcome.so => not found
 libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f675e329000)
 /lib64/ld-linux-x86-64.so.2 (0x00007f675e91c000)
 ```
-*Nos muestra que `libwelcome.so => not found`*
+**Nos muestra que `libwelcome.so => not found`**
 Aca, si hacemos con `LD_PRELOAD` y tratamos de cargar nuestro recurso de forma forzada, no nos va a dejar. Hay ocasiones cuando no nos deja, hay otra vía para ver si tenemos capacidad de escritura en está ruta:
 ```bash
 ls -l /etc/ | grep "ld.so.conf.d"
@@ -208,4 +209,4 @@ whoami
 
 ### Herramientas
 
-(uftrace)[https://github.com/namhyung/uftrace]
+[uftrace](https://github.com/namhyung/uftrace)
