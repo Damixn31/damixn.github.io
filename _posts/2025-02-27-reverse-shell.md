@@ -1,12 +1,13 @@
 ---
 layout: single
 title: Reverse Shell
-data 2025-02-27
+date: 2025-02-27
+classes: wide
 header:
-    teaser: /assets/images/slea32.png
+  teaser: /assets/images/slea32.png
 categories:
-    - Exploits
-    - Shells
+  - Exploits
+  - Shells
 tags:
     - Reverse Shell
     - Remote Access
