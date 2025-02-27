@@ -103,9 +103,9 @@ analytics:
 author:
   name             : "Hyrocript"
   avatar           : "/assets/images/avatar.png"
-  bio              : "Pentester, CTF player<br>HackTheBox ATeam"
+  bio              : "Curioso, de la información <br>Tirando chiches"
   location         : "Argentina"
-  email            : "info@snowscan.io"
+  email            : "damianol29@hotmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -114,13 +114,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "Dxmian31"
+  github           : "https://github.com/Damixn31"
   gitlab           :
   google_plus      :
   keybase          : "hyrocript"
-  instagram        :
+  instagram        : "hi.damit"
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "https://ar.linkedin.com/in/damian-olmedo-fullstackdeveloper"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
